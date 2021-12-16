@@ -1,18 +1,10 @@
 <?php
         $text = 'Lorem ipsum dolor';
+        echo $text;
+        echo '<br> length: ' .strlen($text);
         $varGet = $_GET['badwords'];
+        $censorship = str_replace($varGet, '***', $text);
+        echo '<br>' .$censorship;
+        echo '<br> length: ' .strlen($censorship);
+
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Php Bad Words</title>
-</head>
-<body>
-   
-
-</body>
-</html>
